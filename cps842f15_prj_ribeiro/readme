@@ -1,0 +1,37 @@
+Course Code: CPS 842
+Project: Project 1
+Student Name: Rogerio Ribeiro
+Student #: 500527368
+Due: November 3, 2015
+
+	This project has 3 ruby files, and 2 json files. The gui.rb is the command line interface for the users to update the user_data hash. The recommendation_engine.rb is the collaborative filtering engine, to give users recommended movies. The library.rb has the helper functions for gui.rb, the two main functions update and display. Update will update the user_data with the movie and the rating of the user. Display will display the movies based on the letter that is given. The 2 json files are movie_list.json and user_data.json. The movie_list.json has 3,000 movie titles, these are the movies that are available to the user to rate. The user_data has the users login name and their movie ratings. 
+
+	The main file is gui.rb, to run this you must type: ruby gui.rb
+
+	It will then load a command prompt with the username that you want to use. After, it will welcome you and give you options based on what you can do. Their are five options which are display, update, delete, help, and exit. If the user chooses the display option, they will be prompted to enter a letter which will then give them the titles that start with that letter. If the user chooses update, they will be promted to enter a movie of their choice, and then later rate the movie of their choice. If the user chooses delete, then it will delete the chosen movie out of their hash in user_data.json. The help option will give the users commands to use for the program in case they have forgotten. Lastly, if they choose the exit command then they will be exited out of the program. 
+
+	All other ruby files, can be run via: ruby [name of program]. They will not output anything because the other programs are based on the gui.rb.
+
+	For examples of the output, go to cpsf15_prj_rribeiro/images/ folder. It holds all commands when executed, but it does not include all situations.
+
+	Files:
+
+		cpsf15_prj_rribeiro/
+			gui.rb (main file)
+			recommender_engine.rb (collaborative filtering to give users a recommended movie)
+				- uses pearson_collection and similarity scores
+			library.rb(helper functions for 'gui.rb')
+		
+		cpsf15_prj_rribeiro/json/
+			movie_list(the list of movies that users can choose from)
+			user_data(the hash of the users and ratings of the movies)
+
+		cpsf1515_prj_rribeiro/images/
+			delete_command(shows the delete command)
+			exit_command(shows the exit command)
+			help_command(shows the help command)
+			start_gui(shows how to execute code and prompt of username)
+			update_command(shows the update command)
+			welcome_screen(shows the welcome screen with all the commands)
+
+

@@ -1,1 +1,1 @@
-# CPS842
+Compilation of my assignment and project that was done for CPS 842. The first two assignments are about grabbing information from a documnet, the second goes one step ahead and uses page ranks to rank how many times a word or letter is found.
